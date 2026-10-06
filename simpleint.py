@@ -1,11 +1,10 @@
-import sys
-def check_even_odd(number):
-    if number % 2 == 0:
-        return "Even"
-    else:
-        return "Odd"
-
-
+#simple intreset
+def simple_interest(principal, rate, time):
+    interest = (principal * rate * time) / 100
+    return interest
 if __name__ == "__main__":
-    number=int(sys.argv[1])
-    print("Even and odd ",check_even_odd(number))
+    principal = 1000.00
+    rate = 1.0
+    time = 2.0
+    interest = simple_interest(principal, rate, time)
+    print(f"The simple interest is: {interest}")
